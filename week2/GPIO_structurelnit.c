@@ -1,9 +1,9 @@
 #include<stdio.h>
 
-//ÏÈÒýÓÃº¯Êý
+//å…ˆå¼•ç”¨å‡½æ•°
 void GPIO_Structurelnit(struct GPIO_Struct* a);
 
-//´´½¨Ò»¸öÃ¶¾ÙÀàÐÍ
+//åˆ›å»ºä¸€ä¸ªæžšä¸¾ç±»åž‹
 typedef enum 
 {
 	GPIO_Speed_2MHz, 
@@ -11,7 +11,7 @@ typedef enum
     GPIO_Speed_50MHz
 };
 
-//´´½¨Ò»¸ö½á¹¹Ìå
+//åˆ›å»ºä¸€ä¸ªç»“æž„ä½“
 typedef struct GPIO_Struct
 {
 	int GPIO_Speed;
@@ -29,4 +29,5 @@ int main()
 void GPIO_Structurelnit(struct GPIO_Struct* a)
 {
 	a->GPIO_Speed = GPIO_Speed_2MHz;
+
 }
